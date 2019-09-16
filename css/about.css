@@ -96,6 +96,7 @@ p {
     color: black;
 }
 
+
 /* about paragraph */
 .about {
     border-bottom: 1px dashed black;
@@ -122,7 +123,7 @@ p {
     padding-bottom: 20px;  
 
 }
-
+/* learn more buttons */
 .middle-content a {
     text-decoration: none;
     background-color: white;
@@ -139,8 +140,26 @@ p {
     margin-top: 10px;
     border-radius: 7px;
     color: black;
+    animation-name: learn-more;
+    animation-duration: 5s;
 }
 
+@keyframes learn-more {
+    from {
+        background-color: white;
+        color: red;
+    }
+    to {
+        background-color: red;
+        color: white;
+    }
+}
+
+.middle-content a:hover {
+    background-color: black;
+    color: white;
+}
+/* work together paragraph */
 .last {
     padding-bottom: 40px;
 }
