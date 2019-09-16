@@ -89,7 +89,8 @@ p {
 
 .navbutton {
     padding-left: 70px;
-
+    text-decoration: none;
+    color: grey;
 }
 
 .top-content {
@@ -131,6 +132,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: teal;
+    
 }
 
 .bottom-content {
