@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-weight: 550;
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,9 +70,10 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+
 }
 
-
+/* header and nav */
 .nav {
     display: flex;
     flex-direction: row;
@@ -94,12 +96,14 @@ p {
     color: black;
 }
 
+/* about paragraph */
 .about {
-    padding-top: 20px;
     border-bottom: 1px dashed black;
     padding-bottom: 20px;
 }
 
+
+/* column sets */
 .middle-content {
     display: flex;
     flex-wrap: wrap;
@@ -107,16 +111,45 @@ p {
 .middle-content .items {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 47%;
     height: auto;
     align-contentL: space-between;
     border-bottom: 1px dashed black;
-    padding-right: 40px;
-    padding-left: 30px;
-    padding-top: 20px;
+    margin-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 40px;
     padding-bottom: 20px;  
 
 }
+
+.middle-content a {
+    text-decoration: none;
+    background-color: white;
+  	font-size: 14px;
+	border: 2px solid black;
+	width: 30%;
+    height: 35px;
+    vertical-align: center;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    color: black;
+}
+
+.last {
+    padding-bottom: 40px;
+}
+
+h2 {
+    padding-top: 40px;
+}
+
+/* footer */
 
 footer {
     width: 100%;
