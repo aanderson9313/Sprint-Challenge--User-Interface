@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-weight: 550;
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,8 +70,10 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+
 }
 
+/* header and nav */
 .nav {
     display: flex;
     flex-direction: row;
@@ -93,66 +96,79 @@ p {
     color: black;
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+
+/* about paragraph */
+.about {
     border-bottom: 1px dashed black;
-    padding-top: 20px;
-    font-weight: 600;
+    padding-bottom: 20px;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
 
+/* column sets */
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-    font-weight: 600;
-}
-
-.middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
+.middle-content .items {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 47%;
+    height: auto;
+    align-contentL: space-between;
+    border-bottom: 1px dashed black;
+    margin-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;  
+
+}
+/* learn more buttons */
+.middle-content a {
+    text-decoration: none;
+    background-color: white;
+  	font-size: 14px;
+	border: 2px solid black;
+	width: 30%;
+    height: 35px;
+    vertical-align: center;
     justify-content: center;
-    background-color: teal;
-    
+    align-content: center;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    color: black;
+    animation-name: learn-more;
+    animation-duration: 5s;
 }
 
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-    font-weight: 600;
+@keyframes learn-more {
+    from {
+        background-color: white;
+        color: red;
+    }
+    to {
+        background-color: red;
+        color: white;
+    }
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
+.middle-content a:hover {
+    background-color: black;
+    color: white;
+}
+/* work together paragraph */
+.last {
+    padding-bottom: 40px;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+h2 {
+    padding-top: 40px;
 }
+
+/* footer */
 
 footer {
     width: 100%;
