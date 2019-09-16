@@ -71,6 +71,27 @@ p {
     margin: 0 auto;
 }
 
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    height: 40px;
+    width: 100%;
+}
+
+.navbutton {
+    padding-left: 70px;
+
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
